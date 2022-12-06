@@ -1,21 +1,133 @@
-html, body {
-    height: 100vh;
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: helvetica;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(195, 194, 194);
+}
+h1 {
+    text-align: center;
+    font-family: Helvetica;
+    margin: 30px;
+    font-size: 40px;
 }
 
-h1 {
-    margin-top: 0px;
-    margin-bottom: 50px;
+h2 {
+    text-align: center;
+    font-family: Helvetica;
+    margin: 80px;
+    border: 5px black;
+    font-size: 30px;
 }
+
+p.bot-hand {
+    position: absolute;
+    top: 8.8em;
+    right: 22em;
+    font-family: Helvetica;
+    margin: 50px;
+    font-size: 23px;
+}
+
+p.card.small.spades.K {
+    position: absolute;
+    top: 2.7em;
+    right: 52.75em;
+}
+
+p.card.small.spades.A {
+    position: absolute;
+    top: 1.5em;
+    right: 53.5em;
+}
+
+p.card.hearts.K.large {
+    position: absolute;
+    top: 7.9em;
+    left: 28.9em;
+}
+
+p.card.back.blue.large {
+    position: absolute;
+    top: 7.3em;
+    left: 28.2em;
+}
+
+button#hit-me {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: 11em;
+    right: 22em;
+}
+
+button#stay {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 8.8em;
+    right: 22em;
+}
+
+p#results {
+    font-family: Helvetica;
+    position: absolute;
+    top: 14em;
+    left: 30em;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+div#your-cards {
+    position: absolute;
+    bottom: 0em;
+    right: 35em;
+} 
+
+
+
+
+
+
+/* 
+
+
+p.player {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    margin: 35px;
+}
+
+p.player-hand {
+    position: absolute;
+    bottom: 3em;
+    right: 22em;
+    font-family: Helvetica;
+    margin: 50px;
+    font-size: 23px;
+}
+
+
+}
+
+button.hit-me {
+    background-color: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    bottom: 12em;
+    right: 26em;
+}
+
+button.stay {
+    background-color: red;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    bottom: 9em;
+    right: 26em;
+} */
