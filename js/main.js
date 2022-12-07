@@ -39,7 +39,7 @@ function buildDeck() {
             deck.push(suits[i] + "-" + values[v]);
         }
     }
-    // console.log(deck);
+    
 }
 
 function shuffleDeck() {
@@ -60,10 +60,9 @@ for (let i = 0; i < 2; i++) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
     console.log(card)
-    // cardImg.src = "./images/" + card + ".svg";
     cardImg.src = "./css/card-deck-css/images/" + card + ".svg" 
     yourSum += getValue(card);
-    // aceCount += checkAce(card);
+
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
@@ -77,7 +76,7 @@ console.log(yourSum)
 }
 
 function getValue(card) {
-    // console.log(card)
+    
 
     if (card.includes("A")) {
         return 11;
@@ -125,7 +124,9 @@ function hitMe() {
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
-    if (yourSum >= 21) {
+
+    if (yourSum > 21) {
+
         canHit = false;
     
     }
@@ -143,8 +144,7 @@ function hitMe() {
 function stay() {
 
     botSum = botSum;
-    yourSum = yourSum;
-    // yourSum = reduceAce(yourSum, aceCount);
+
 
     canHit = false;
 
@@ -174,6 +174,4 @@ function stay() {
     document.getElementById("results").innerText = message;
 }
 
-function reset() {
-    
-}
+

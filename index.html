@@ -13,13 +13,16 @@
 <body>
     <h1>Blackjack</h1>
    
-    <h2>Bot's Hand: <span id="bot-sum"></span></h2> <br> <br> <br> <br> <br> <br> <br>
+
+    <h2>Bot's Hand: <span id="bot-sum"></span></h2> <br> <br> <br> <br> <br> <br>
+
 
     <p class="card small spades A"></p> 
     <p class="card small spades K"></p> 
     <p class="card back blue large"></p>
     <p class="card hearts K large"></p>
     <p class="card back blue shadow"></p>
+
     
 
     <h2>Your Hand: <span id="your-sum"></span></h2>
@@ -27,10 +30,20 @@
 
     <button id="hit-me">Hit Me</button>
     <button id="stay">Stay</button>
-    <button id="reset" onClick="window.location.reload();">Reset</button>
+
+    <button id="reset" onclick="location.reload();">Reset</button>
+
 
     <p id="results"></p>
+
     
+    <p id="instructions"> <br> <br> • The goal of Blackjack is to get a score closest to 21 without going over <br> • You will be comparing your score to the Bot's Hand<br> 
+        • Click the "Hit Me" button to draw another card <br> • Whenever you are finished gathering cards, click the "Stay" button <br> • Your Hand > Bot's Hand +<br> Your Hand <= 21, you win! <br>
+        • Your Hand < Bot's Hand <br> Your Hand > 21, you lose <br> • Your Hand = Bot's Hand, it's a tie
+    </p>
+    <p id="rules"><strong>Rules</strong>
+
+    </p>
 
 
 
