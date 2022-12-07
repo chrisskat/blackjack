@@ -10,7 +10,8 @@
 - CSS
 - Javascript
 
-Screenshot of the app: https://i.imgur.com/B6orhGK.png
+Screenshot of the app: 
+[![Screenshot]https://i.imgur.com/B6orhGK.png
 
 # Link to the Game
 - https://chrisskat.github.io/blackjack/
