@@ -25,3 +25,8 @@ Screenshot of the app:
 - AAU I want to start the game over with a click of a button
 - AAU I want to be told the rules of the game
 
+# Icebox Items
+- Including bets with each hand
+  - Adding a win/loss tracker
+- Having the Bot's Hand not be a random number, and have it "hit" or "stay" as the user would
+
