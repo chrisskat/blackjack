@@ -39,4 +39,5 @@ Screenshot of the app:
 - Including bets with each hand
   - Adding a win/loss tracker
 - Having the Bot's Hand not be a random number, and have it "hit" or "stay" as the user would
+- Make an Ace counting function that allows the card to be a value of either 11 or 1
 
