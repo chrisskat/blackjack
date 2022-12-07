@@ -133,9 +133,6 @@ button#reset {
 
 }
 
-h1, h2, p#results {
-
-
 
 p#instructions {
     background-color: #ba44448e;
@@ -170,20 +167,4 @@ p#rules {
     -webkit-text-stroke-color: rgba(196, 196, 196, 0.64);
 }
 
-    color: #8ff6ff;
-    font-style: italic;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
 
-button#reset {
-    width: 100px;
-    height: 55px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    position: absolute;
-    bottom: 8.3em;
-    right: 12.1em;
-    border-radius: 10%;
-}
