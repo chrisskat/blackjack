@@ -25,6 +25,16 @@ Screenshot of the app:
 - AAU I want to start the game over with a click of a button
 - AAU I want to be told the rules of the game
 
+# MVP Goals
+- Display rules
+- Have the game start on reload
+- Have the score of Bot's Hand be random number generated from 16-20
+- Display scores of both User's Hand and Bot's Hand
+- Hit button drawing another card to user's hand
+- Stay button showing the results of the game
+- Display messages of whether user wins, loses, or ties
+- Reset button to refresh the page and play again from the start
+
 # Icebox Items
 - Including bets with each hand
   - Adding a win/loss tracker
