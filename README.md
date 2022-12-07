@@ -11,7 +11,7 @@
 - Javascript
 
 Screenshot of the app: 
-[![Screenshot]https://i.imgur.com/B6orhGK.png
+![Screen Shot 2022-12-07 at 9 23 21 AM](https://user-images.githubusercontent.com/117867407/206222103-57487188-5df5-4fff-b922-09621458e64b.png)
 
 # Link to the Game
 - https://chrisskat.github.io/blackjack/
