@@ -1,19 +1,23 @@
+
+
 body {
-    background-color: rgb(195, 194, 194);
+    background-image: url('https://videohive.img.customer.envatousercontent.com/files/38a23d08-2e6a-4dc7-8de7-56b11ff8cd33/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=2019f14eee641b775d4e408792ce959a');
+    background-size: 110% 100%;
 }
+
 h1 {
     text-align: center;
-    font-family: Helvetica;
+    font-family: Arial;
     margin: 30px;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 h2 {
     text-align: center;
-    font-family: Helvetica;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 80px;
     border: 5px black;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 p.bot-hand {
@@ -28,25 +32,37 @@ p.bot-hand {
 p.card.small.spades.K {
     position: absolute;
     top: 2.7em;
-    right: 52.75em;
+    right: 46em;
 }
 
 p.card.small.spades.A {
     position: absolute;
     top: 1.5em;
-    right: 53.5em;
+    right: 47em;
 }
 
 p.card.hearts.K.large {
     position: absolute;
-    top: 7.9em;
-    left: 28.9em;
+    top: 8.3em;
+    left: 25.8em;
+    height: 182px;
+    width: 130px;
 }
 
 p.card.back.blue.large {
     position: absolute;
-    top: 7.3em;
-    left: 28.2em;
+    top: 7.7em;
+    left: 25.1em;
+    height: 182px;
+    width: 130px; 
+}
+
+p.card.back.blue.shadow {
+    position: absolute;
+    bottom: 3em;
+    right: 13.8em;
+    height: 182px;
+    width: 130px;
 }
 
 button#hit-me {
@@ -57,6 +73,7 @@ button#hit-me {
     position: absolute;
     bottom: 11em;
     right: 22em;
+    border-radius: 10%;
 }
 
 button#stay {
@@ -67,67 +84,84 @@ button#stay {
     position: absolute;
     bottom: 8.8em;
     right: 22em;
+    border-radius: 10%;
 }
 
 p#results {
     font-family: Helvetica;
     position: absolute;
-    top: 14em;
-    left: 30em;
-    font-size: 25px;
+    top: 10.7em;
+    left: 18.7em;
+    font-size: 35px;
     font-weight: 900;
 }
 
 
 div#your-cards {
     position: absolute;
-    bottom: 0em;
-    right: 35em;
+    bottom: 6em;
+    right: 35.5em;
+    
 } 
 
-
-
-
-
-
-/* 
-
-
-p.player {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 30px;
-    margin: 35px;
+img {
+    height: 180px;
+    width: 140px;
+    background-color: aliceblue;
+    border-radius: 3.5%;
 }
 
-p.player-hand {
+h1, h2, p#results {
+
+    color: #8ff6ff;
+    font-style: italic;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.666);
+}
+
+button#reset {
+    width: 100px;
+    height: 55px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
     position: absolute;
-    bottom: 3em;
-    right: 22em;
-    font-family: Helvetica;
-    margin: 50px;
-    font-size: 23px;
+    bottom: 8.3em;
+    right: 12.1em;
+    border-radius: 10%;
 }
 
 
-}
 
-button.hit-me {
-    background-color: green;
-    padding: 10px 20px;
-    font-size: 16px;
-    display: inline-block;
+p#instructions {
+    background-color: #ba44448e;
+    color: #8ff6ff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 370px;
+    height: 500px;
     position: absolute;
-    bottom: 12em;
-    right: 26em;
+    top: 0.2em;
+    left: 0.2em;
+    text-align: left;
+    border-radius: 7%;
+    font-style: italic;
+    font-size: 27.5px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.64);
+    background-blend-mode: screen;
 }
 
-button.stay {
-    background-color: red;
-    padding: 10px 20px;
-    font-size: 16px;
-    display: inline-block;
+p#rules {
+    color: #8ff6ff;
+    font-size:35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #8ff6ff;
+    text-decoration-thickness: inherit;
     position: absolute;
-    bottom: 9em;
-    right: 26em;
-} */
+    top: 0.3em;
+    left: 4.3em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(196, 196, 196, 0.64);
+}
