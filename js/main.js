@@ -16,7 +16,7 @@ window.onload = function() {
 }
 
 function buildDeck() {
-    let suits = ["diamonds", "spades", "clubs", "hearts"];
+    let suits = ["diamonds", "spades", "clubs", "hearts"]; 
     let values = [
         "r02",
         "r03",
@@ -61,9 +61,9 @@ for (let i = 0; i < 2; i++) {
     let card = deck.pop();
     console.log(card)
     // cardImg.src = "./images/" + card + ".svg";
-    cardImg.src = "./css/card-deck-css/images/" + card + ".svg"
+    cardImg.src = "./css/card-deck-css/images/" + card + ".svg" 
     yourSum += getValue(card);
-    aceCount += checkAce(card);
+    // aceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
@@ -72,11 +72,12 @@ for (let i = 0; i < 2; i++) {
 console.log(yourSum)
     document.getElementById("hit-me").addEventListener("click", hitMe);
     document.getElementById("stay").addEventListener("click", stay);
+    document.getElementById("reset").addEventListener("click", reset);
 
 }
 
 function getValue(card) {
-    console.log(card)
+    // console.log(card)
 
     if (card.includes("A")) {
         return 11;
@@ -111,6 +112,7 @@ function getValue(card) {
 
 
 function hitMe() {
+
     if (!canHit) {
         return;
     }
@@ -123,14 +125,16 @@ function hitMe() {
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
-    if (reduceAce(yourSum, aceCount) > 21) {
+    if (yourSum >= 21) {
         canHit = false;
+    
     }
     console.log(card)
     
-    if (hitMe)
+    if (hitMe) {
     console.log("Hit Me")
     console.log(yourSum)
+    }
 }
 
 
@@ -139,7 +143,8 @@ function hitMe() {
 function stay() {
 
     botSum = botSum;
-    yourSum = reduceAce(yourSum, aceCount);
+    yourSum = yourSum;
+    // yourSum = reduceAce(yourSum, aceCount);
 
     canHit = false;
 
@@ -169,17 +174,6 @@ function stay() {
     document.getElementById("results").innerText = message;
 }
 
-function checkAce(card) {
-    if (card[0] == "A") {
-        return 1;
-    }
-    return 0;
-}
-
-function reduceAce(yourSum, aceCount) {
-    while (yourSum > 21 && aceCount > 0) {
-        yourSum -= 10;
-        aceCount -= 1;
-    }
-    return yourSum;
+function reset() {
+    
 }
