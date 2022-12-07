@@ -109,6 +109,7 @@ img {
     width: 140px;
     background-color: aliceblue;
     border-radius: 3.5%;
+
 }
 
 h1, h2, p#results {
@@ -129,7 +130,10 @@ button#reset {
     bottom: 8.3em;
     right: 12.1em;
     border-radius: 10%;
+
 }
+
+h1, h2, p#results {
 
 
 
@@ -164,4 +168,22 @@ p#rules {
     left: 4.3em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(196, 196, 196, 0.64);
+}
+
+    color: #8ff6ff;
+    font-style: italic;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+button#reset {
+    width: 100px;
+    height: 55px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8.3em;
+    right: 12.1em;
+    border-radius: 10%;
 }

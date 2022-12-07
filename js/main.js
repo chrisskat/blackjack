@@ -16,7 +16,7 @@ window.onload = function() {
 }
 
 function buildDeck() {
-    let suits = ["diamonds", "spades", "clubs", "hearts"];
+    let suits = ["diamonds", "spades", "clubs", "hearts"]; 
     let values = [
         "r02",
         "r03",
@@ -39,7 +39,7 @@ function buildDeck() {
             deck.push(suits[i] + "-" + values[v]);
         }
     }
-    // console.log(deck);
+    
 }
 
 function shuffleDeck() {
@@ -60,9 +60,9 @@ for (let i = 0; i < 2; i++) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
     console.log(card)
-    // cardImg.src = "./images/" + card + ".svg";
-    cardImg.src = "./css/card-deck-css/images/" + card + ".svg"
+    cardImg.src = "./css/card-deck-css/images/" + card + ".svg" 
     yourSum += getValue(card);
+
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
@@ -71,11 +71,12 @@ for (let i = 0; i < 2; i++) {
 console.log(yourSum)
     document.getElementById("hit-me").addEventListener("click", hitMe);
     document.getElementById("stay").addEventListener("click", stay);
+    document.getElementById("reset").addEventListener("click", reset);
 
 }
 
 function getValue(card) {
-    console.log(card)
+    
 
     if (card.includes("A")) {
         return 11;
@@ -110,6 +111,7 @@ function getValue(card) {
 
 
 function hitMe() {
+
     if (!canHit) {
         return;
     }
@@ -122,14 +124,18 @@ function hitMe() {
     document.getElementById("your-cards").append(cardImg);
     document.getElementById("your-sum").innerText = yourSum;
 
+
     if (yourSum > 21) {
+
         canHit = false;
+    
     }
     console.log(card)
     
-    if (hitMe)
+    if (hitMe) {
     console.log("Hit Me")
     console.log(yourSum)
+    }
 }
 
 
@@ -138,6 +144,7 @@ function hitMe() {
 function stay() {
 
     botSum = botSum;
+
 
     canHit = false;
 
@@ -166,3 +173,5 @@ function stay() {
     document.getElementById("your-sum").innerText = yourSum;
     document.getElementById("results").innerText = message;
 }
+
+
