@@ -13,7 +13,7 @@
 Screenshot of the app: 
 ![Screen Shot 2022-12-07 at 9 23 21 AM](https://user-images.githubusercontent.com/117867407/206222103-57487188-5df5-4fff-b922-09621458e64b.png)
 
-# Link to the Game
+# Link to the Game (must be viewed on standard laptop screen)
 - https://chrisskat.github.io/blackjack/
 
 # User Stories
